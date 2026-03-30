@@ -39,12 +39,8 @@ $(TWEAK_NAME)_INJECT_DYLIBS = \
     $(THEOS_OBJ_DIR)/YTABConfig.dylib \
     $(THEOS_OBJ_DIR)/YTIcons.dylib \
     $(THEOS_OBJ_DIR)/YouGroupSettings.dylib \
-    $(THEOS_OBJ_DIR)/YouLoop.dylib \
     $(THEOS_OBJ_DIR)/YouMute.dylib \
     $(THEOS_OBJ_DIR)/YouPiP.dylib \
-    $(THEOS_OBJ_DIR)/YouQuality.dylib \
-    $(THEOS_OBJ_DIR)/YouSpeed.dylib \
-    $(THEOS_OBJ_DIR)/YouTimeStamp.dylib \
     $(THEOS_OBJ_DIR)/YouTubeDislikesReturn.dylib \
     $(THEOS_OBJ_DIR)/DontEatMyContent.dylib \
     $(THEOS_OBJ_DIR)/YTHoldForSpeed.dylib \
@@ -58,7 +54,7 @@ $(TWEAK_NAME)_EMBED_EXTENSIONS = $(wildcard Extensions/*.appex)
 
 include $(THEOS)/makefiles/common.mk
 ifneq ($(JAILBROKEN),1)
-SUBPROJECTS += Tweaks/Alderis Tweaks/DontEatMyContent Tweaks/FLEXing/libflex Tweaks/Return-YouTube-Dislikes Tweaks/YTABConfig Tweaks/YouGroupSettings Tweaks/YTIcons Tweaks/YouLoop Tweaks/YouMute Tweaks/YouPiP Tweaks/YouQuality Tweaks/YouSpeed Tweaks/YouTimeStamp Tweaks/YTHoldForSpeed Tweaks/YTUHD Tweaks/YTweaks
+SUBPROJECTS += Tweaks/Alderis Tweaks/DontEatMyContent Tweaks/FLEXing/libflex Tweaks/Return-YouTube-Dislikes Tweaks/YTABConfig Tweaks/YouGroupSettings Tweaks/YTIcons Tweaks/YouMute Tweaks/YouPiP Tweaks/YTHoldForSpeed Tweaks/YTUHD Tweaks/YTweaks
 include $(THEOS_MAKE_PATH)/aggregate.mk
 endif
 include $(THEOS_MAKE_PATH)/tweak.mk
